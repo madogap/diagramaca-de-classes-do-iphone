@@ -1,4 +1,4 @@
-package org.intarfaces.service.serviceinter;
+package org.equipamentos.musica;
 
 public interface IReproduzivel {
     public void tocar();

@@ -1,11 +1,10 @@
-package org.modos;
+package org.app;
 
-import org.intarfaces.service.NavegadorService;
-import org.intarfaces.service.ReprodutorMusicalService;
+import org.equipamentos.service.Navegador;
+import org.equipamentos.service.ReprodutorMusical;
+import org.equipamentos.service.Telefone;
 
-
-
-public class Iphone implements ReprodutorMusicalService, NavegadorService {
+public class Iphone implements ReprodutorMusical, Navegador, Telefone {
     public static void main(String[] args) {
 
         Iphone iphone = new Iphone();
@@ -13,7 +12,7 @@ public class Iphone implements ReprodutorMusicalService, NavegadorService {
         iphone.atualizarPagina();
         iphone.tocar();
         iphone.parar();
-        iphone.
+
 
     }
     
