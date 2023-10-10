@@ -12,10 +12,10 @@ public class Iphone implements ReprodutorMusical, Navegador, Telefone {
         iphone.atualizarPagina();
         iphone.tocar();
         iphone.parar();
-
+        iphone.atualizarPagina();
 
     }
-    
+
     @Override
     public void parar() {
         System.out.println("Pausado musica");
@@ -40,5 +40,5 @@ public class Iphone implements ReprodutorMusical, Navegador, Telefone {
         System.out.println("Atualizando Pagina");
 
     }
-    
+
 }
