@@ -22,22 +22,26 @@ public class Iphone implements ReprodutorMusical, Navegador, Telefone {
         System.out.println("\n......Reproduzindo musica....");
         ReprodutorMusical reprodutorMusical = iphone;
         reprodutorMusical.tocar();
-        reprodutorMusical.parar();
+        reprodutorMusical.selecionarMusica();
         System.out.println("\n......Ligando telefone.....");
         Telefone telefone = iphone;
         telefone.ligar();
         telefone.desligar();
         System.out.println("");
 
-    }
 
+    }
+    @Override
+    public void selecionarMusica(){
+        System.out.println("Musica selecionada");
+    }
 
     @Override
-    public void parar() {
+        public void parar() {
         System.out.println("Pausado musica");
 
-    }
-
+        }
+   
     @Override
     public void tocar() {
         System.out.println("Tocando musica");
